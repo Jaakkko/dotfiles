@@ -17,14 +17,14 @@
 TYPE="${BLOCK_INSTANCE:-mem}"
 
 awk -v type=$TYPE '
-/^MemAvailable:/ {
-	mem_available=$2
+/^MemTotal:/ {
+	mem_total=$2
 }
 /^MemFree:/ {
 	mem_free=$2
 }
 END {
-	used=(mem_available-mem_free)/1024/1024
+	used=(mem_total-mem_free)/1024/1024
 
 	# full text
 	printf("%.1fG\n", used)
