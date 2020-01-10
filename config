@@ -18,7 +18,7 @@ gaps outer 0
 # Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/.config/wall.jpg
 # Composite manager
-exec_always --no-startup-id compton --xrender-sync-fence
+exec_always --no-startup-id picom --backend xrender --xrender-sync-fence
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -39,6 +39,10 @@ font pango:Roboto Regular 10
 
 # Bindings
 bindsym $mod+F12 exec --no-startup-id systemctl suspend
+bindsym $mod+F1 exec --no-startup-id chromium --force-dark-mode
+bindsym $mod+F2 exec --no-startup-id sh /usr/local/android-studio/bin/studio.sh
+bindsym $mod+F3 exec --no-startup-id sh /usr/local/idea-IC-182.4505.22/bin/idea.sh
+bindsym $mod+F4 exec --no-startup-id nvidia-settings
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -195,15 +199,13 @@ bar {
 	status_command i3blocks
 	separator_symbol " "
 	colors {
-		#background #003b8e
-		#background #00427f
 		background #002d56
 		
 		# XXXXXXXXXXXXX   	stroke	fill		font
-		focused_workspace 	#505050 #ff8900 #000000
-		active_workspace 		#505050 #ffbc45 #888888
-		inactive_workspace 	#000000 #607d8b #000000
-		urgent_workspace 		#000000 #eb709b #ffffff
+    focused_workspace 	#002d56 #002d56 #ffffff
+		active_workspace 		#002d56 #ffbc45 #000000
+		inactive_workspace 	#002d56 #002d56 #666666
+		urgent_workspace 	  #002d56 #002d56 #FFAC60
 	}
 }
 
