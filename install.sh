@@ -14,4 +14,4 @@ cp vconsole.conf /etc
 
 # ~
 cp vimrc ~/.vimrc
-cp .bashrc .scripts .xbindkeysrc .xinitrc .Xresources ~
+cp -r .bashrc .scripts .xbindkeysrc .xinitrc .Xresources ~
