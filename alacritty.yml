@@ -107,8 +107,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: Ubuntu Mono
-    #family: Source Code Pro
+    #family: Ubuntu Mono
+    family: Source Code Pro
     #family: Dejavu Sans Mono
 
     # The `style` can be specified to pick a specific face.
@@ -297,7 +297,7 @@ background_opacity: 0.8
 # All available `mods` and `action` values are documented in the key binding
 # section.
 mouse_bindings:
-  - { mouse: Middle, action: PasteSelection }
+  - { mouse: Right, action: Paste }
 
 mouse:
   # Click settings
