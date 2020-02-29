@@ -7,6 +7,7 @@ au!
 autocmd VimEnter * silent !echo -ne '\e[2 q'
 augroup END
 
+set timeoutlen=1
 set tabstop=2
 set expandtab
 set shiftwidth=2
