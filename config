@@ -211,4 +211,5 @@ bar {
 
 exec "setxkbmap -layout fi"
 exec "xinput --set-prop 'Logitech G300s Optical Gaming Mouse' 'libinput Scroll Method Enabled' 0, 0, 1"
+exec "imwheel -b 45"
 exec_always "xrandr --output DP-0 --mode 2560x1440 --rate 144"
