@@ -18,8 +18,7 @@ gaps outer 0
 # Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/.config/wall.jpg
 # Composite manager
-exec_always --no-startup-id picom --backend xrender --xrender-sync-fence
-
+exec_always --no-startup-id picom --backend glx --glx-no-stencil --use-damage
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
