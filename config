@@ -18,7 +18,7 @@ gaps outer 0
 # Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/.config/wall.jpg
 # Composite manager
-exec_always --no-startup-id picom --backend xr_glx_hybrid --xrender-sync-fence --use-damage --glx-no-stencil --glx-no-rebind-pixmap
+exec --no-startup-id picom --backend xr_glx_hybrid --xrender-sync-fence --use-damage --glx-no-stencil
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -39,8 +39,6 @@ font pango:SFNS Display Regular 14
 # Bindings
 bindsym $mod+F12 exec --no-startup-id systemctl suspend
 bindsym $mod+F1 exec --no-startup-id chromium --force-dark-mode
-bindsym $mod+F2 exec --no-startup-id sh /usr/local/android-studio/bin/studio.sh
-bindsym $mod+F3 exec --no-startup-id sh /usr/local/idea-IC-182.4505.22/bin/idea.sh
 bindsym $mod+F4 exec --no-startup-id nvidia-settings
 
 # Use Mouse+$mod to drag floating windows to their wanted position
