@@ -14,6 +14,9 @@ compinit
 # End of lines added by compinstall
 
 
+PROMPT_EOL_MARK=''
+
+
 # Prompt
 export PS1="%F{39}%n %F{white}%~ %F{39}$ %F{white}"
 
