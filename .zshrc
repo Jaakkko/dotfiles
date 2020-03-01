@@ -14,6 +14,9 @@ compinit
 # End of lines added by compinstall
 
 
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
+
 PROMPT_EOL_MARK=''
 
 
