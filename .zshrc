@@ -14,6 +14,9 @@ compinit
 # End of lines added by compinstall
 
 
+unset zle_bracketed_paste
+
+
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 
@@ -31,6 +34,7 @@ alias ls='ls -hN --color=auto --group-directories-first'
 # ENV
 export VISUAL=vim
 export EDITOR=vim
+export PATH="$(yarn global bin):$PATH"
 
 
 # vi mode
