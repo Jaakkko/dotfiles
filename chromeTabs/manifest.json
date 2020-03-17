@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "Tabs",
+    "version": "0.1",
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "commands": {
+        "nextTab": {
+            "suggested_key": {
+                "default": "Alt+L"
+            },
+            "description": "Go to next tab"
+        },
+        "previousTab": {
+            "suggested_key": {
+                "default": "Alt+H"
+            },
+            "description": "Go to previous tab"
+        },
+        "moveTabRight": {
+            "suggested_key": {
+                "default": "Alt+Shift+L"
+            },
+            "description": "Move current tab right"
+        },
+        "moveTabLeft": {
+            "suggested_key": {
+                "default": "Alt+Shift+H"
+            },
+            "description": "Move current tab left"
+        }
+    }
+}
