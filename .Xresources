@@ -1,4 +1,5 @@
-Xcursor.size: 16
+Xcursor.size: 2
+Xcursor.theme: Bibata_Ice
 
 rofi.lines: 3
 rofi.width: 100
