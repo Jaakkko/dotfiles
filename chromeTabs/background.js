@@ -10,7 +10,7 @@ const moveCurrentTab = (direction) => {
 const focusTab = (direction) => {
     chrome.tabs.query({ active: true, currentWindow: true }, (currentTab) => {
         const { index: currentIndex } = currentTab[0];
-        chrome.tabs.query({ index: currentIndex + 1 * direction }, (focusTab) => {
+        chrome.tabs.query({ index: currentIndex + 1 * direction, currentWindow: true }, (focusTab) => {
             const { id } = focusTab[0];
             chrome.tabs.update(id, {
                 active: true
