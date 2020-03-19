@@ -31,15 +31,6 @@ export PS1="%F{39}%n %F{white}%~ %F{39}$ %F{white}"
 alias ls='ls -hN --color=auto --group-directories-first'
 
 
-# ENV
-export VISUAL=vim
-export EDITOR=vim
-export PATH="$(yarn global bin):$PATH"
-export PATH="/home/jaakko/Android/Sdk/platform-tools:$PATH"
-
-alias adbr='adb kill-server && adb start-server'
-
-
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
