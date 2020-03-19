@@ -163,9 +163,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # define colors
 set $bg       #000000
-set $bo       #0384fc40
-set $boac     #ff82c5
-#set $boac     #d1b500
+set $bo       #0c3761
+set $boac     #0384fc
 set $fgac     #dae6f0
 set $fgia     #666666
 set $fgur     #ffac60

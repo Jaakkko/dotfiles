@@ -1,0 +1,17 @@
+configuration {
+	show-match: false;
+	color-window: "#f0000000, #000000, #000000";
+	lines: 3;
+	width: 100;
+	padding: 800;
+	fake-transparency: true;
+	font: "Roboto Light 24";
+	line-padding: 8;
+	separator-style: "none";
+	hide-scrollbar: true;
+  /*            bg          fg       bgalt      hlbg        hlfg*/
+  color-normal: "#00000000, #dae6f0, #00000000, #00000000,  #fff200";
+  color-urgent: "#00000000, #dae6f0, #00000000, #00000000,  #fff200";
+  color-active: "#00000000, #dae6f0, #00000000, #00000000,  #fff200";
+	modi: "run";
+}
