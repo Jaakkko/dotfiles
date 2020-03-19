@@ -186,9 +186,9 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # define colors
-set $bg       #002d56
+set $bg       #000000
 set $bo       #002d56
-set $fgac     #ffffff
+set $fgac     #dae6f0
 set $fgia     #666666
 set $fgur     #ffac60
 
@@ -209,6 +209,7 @@ bar {
 	separator_symbol " "
 	colors {
 		background $bg
+    statusline #ffff00
 		
 		# XXXXXXXXXXXXX   	stroke	fill		font
     focused_workspace 	$bg     $bg     $fgac
