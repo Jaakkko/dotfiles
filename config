@@ -16,10 +16,13 @@ for_window [class="jetbrains-idea" title="win0"] floating enable;
 # Android Studio
 for_window [class="java-lang-Thread" instance="sun-awt-X11-XWindowPeer" title="win0"] floating enable;
 
-default_border          none
-default_floating_border none
+default_border          pixel 4
+default_floating_border pixel 4
 
-gaps inner 0
+smart_gaps on
+smart_borders on
+
+gaps inner 8
 gaps outer 0
 
 # Wallpaper
@@ -74,29 +77,6 @@ bindsym $mod+d exec rofi -show run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
-bindsym $mod+r mode "resize"
-
 # resize
 bindsym $mod+Left  resize shrink  width   10 px or 10 ppt
 bindsym $mod+Down  resize grow    height  10 px or 10 ppt
@@ -125,9 +105,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+w layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -135,11 +113,9 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
+# toggle border
+bindsym $mod+e gaps inner all set 0
+bindsym $mod+r gaps inner all set 8
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -187,13 +163,15 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # define colors
 set $bg       #000000
-set $bo       #002d56
+set $bo       #0384fc40
+set $boac     #ff82c5
+#set $boac     #d1b500
 set $fgac     #dae6f0
 set $fgia     #666666
 set $fgur     #ffac60
 
 #												BORDER  		BACKGROUND 	TEXT  		INDICATOR   CHILD_BORDER
-client.focused  				$bo			    $bg			    #EEEEEE		$bo			    $bo
+client.focused  				$boac	      $bg			    #EEEEEE		$boac			  $boac
 client.unfocused 				$bo   	    $bg			    #EEEEEE		$bo			    $bo
 client.focused_inactive $bo   	    $bg			    #EEEEEE		$bo			    $bo
 client.urgent						$bo 		    $bg 		    #EEEEEE		$bo			    $bo
