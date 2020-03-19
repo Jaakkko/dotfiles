@@ -14,6 +14,12 @@ compinit
 # End of lines added by compinstall
 
 
+unset zle_bracketed_paste
+
+
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
+
 PROMPT_EOL_MARK=''
 
 
