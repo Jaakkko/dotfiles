@@ -15,9 +15,11 @@ set $mod Mod4
 for_window [class="jetbrains-idea" title="win0"] floating enable;
 # Android Studio
 for_window [class="java-lang-Thread" instance="sun-awt-X11-XWindowPeer" title="win0"] floating enable;
+# Steam
+for_window [class="Steam"] floating enable;
 
-default_border          pixel 4
-default_floating_border pixel 4
+default_border          pixel 2
+default_floating_border pixel 2
 
 smart_gaps on
 smart_borders on
@@ -32,7 +34,7 @@ exec --no-startup-id picom --backend glx --glx-no-stencil --use-damage
 # Keyboard layout
 exec setxkbmap -layout fi
 # Scroll speed
-exec imwheel -b 45
+exec imwheel -b 45 -f
 # Screen resolution & refresh rate
 exec xrandr --output DP-0 --mode 2560x1440 --rate 144
 
@@ -164,7 +166,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # define colors
 set $bg       #000000
 set $bo       #0c3761
-set $boac     #0384fc
+set $boac     #0a72c2
 set $fgac     #dae6f0
 set $fgia     #666666
 set $fgur     #ffac60
