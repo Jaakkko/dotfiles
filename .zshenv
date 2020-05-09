@@ -1,5 +1,6 @@
 export VISUAL=vim
 export EDITOR=vim
+
 export PATH="$(yarn global bin):$PATH"
 export PATH="/home/jaakko/Android/Sdk/platform-tools:$PATH"
 export PATH="/home/jaakko/.local/bin:$PATH"
