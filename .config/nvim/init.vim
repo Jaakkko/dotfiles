@@ -26,6 +26,7 @@ set smartindent
 set relativenumber
 set updatetime=300
 set shortmess+=c
+set termguicolors
 
 nnoremap <silent> <A-h> :tabp<CR>
 nnoremap <silent> <A-l> :tabn<CR>
@@ -36,11 +37,14 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '>-2<CR>gv=gv
 
 call plug#begin('~/.vim/plugged')
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'bling/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'preservim/nerdtree'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
+
+lua require'plug-colorizer'
 
 nnoremap <silent> <F1> :NERDTreeToggle<CR>
