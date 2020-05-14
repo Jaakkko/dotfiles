@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/jaakko/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Dark"
-gtk-icon-theme-name="Moka"
+gtk-theme-name="Material-Black-Frost"
+gtk-icon-theme-name="Breeze-Splendent-Dark"
 gtk-font-name="Roboto Light 10"
 gtk-cursor-theme-name="Bibata_Ice"
 gtk-cursor-theme-size=0
