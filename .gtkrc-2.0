@@ -1,7 +1,10 @@
 # DO NOT EDIT! This file will be overwritten by LXAppearance.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
+<<<<<<< HEAD
 include "/home/jaakko/.gtkrc-2.0.mine"
+=======
+>>>>>>> e642f17d20378d07a018f8aefe591270e48bda3b
 gtk-theme-name="Arc-Dark"
 gtk-icon-theme-name="Moka"
 gtk-font-name="Roboto Light 10"
@@ -16,4 +19,7 @@ gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle="hintfull"
+<<<<<<< HEAD
 gtk-xft-rgba="none"
+=======
+>>>>>>> e642f17d20378d07a018f8aefe591270e48bda3b

@@ -10,8 +10,14 @@ configuration {
 	separator-style: "none";
 	hide-scrollbar: true;
   /*            bg          fg       bgalt      hlbg        hlfg*/
+<<<<<<< HEAD
   color-normal: "#00000000, #e4eef5, #00000000, #00000000,  #75c6ff";
   color-urgent: "#00000000, #e4eef5, #00000000, #00000000,  #75c6ff";
   color-active: "#00000000, #e4eef5, #00000000, #00000000,  #75c6ff";
+=======
+  color-normal: "#00000000, #dae6f0, #00000000, #00000000,  #fff200";
+  color-urgent: "#00000000, #dae6f0, #00000000, #00000000,  #fff200";
+  color-active: "#00000000, #dae6f0, #00000000, #00000000,  #fff200";
+>>>>>>> e642f17d20378d07a018f8aefe591270e48bda3b
 	modi: "run";
 }

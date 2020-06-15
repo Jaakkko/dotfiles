@@ -96,8 +96,12 @@ font:
     #   - (Linux) monospace
     #   - (Windows) Consolas
     #family: Ubuntu Mono
+<<<<<<< HEAD:.config/alacritty/alacritty.yml
     #family: Source Code Pro
     family: JetBrains Mono
+=======
+    family: Source Code Pro
+>>>>>>> e642f17d20378d07a018f8aefe591270e48bda3b:alacritty.yml
     #family: Dejavu Sans Mono
 
     # The `style` can be specified to pick a specific face.

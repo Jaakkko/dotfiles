@@ -11,12 +11,17 @@ autoload -Uz compinit
 zstyle ':completion:*' menu select
 compinit
 
+<<<<<<< HEAD
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # End of lines added by compinstall
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+=======
+# End of lines added by compinstall
+
+>>>>>>> e642f17d20378d07a018f8aefe591270e48bda3b
 
 unset zle_bracketed_paste
 
@@ -33,8 +38,16 @@ export PS1="%F{39}%n %F{white}%~ %F{39}$ %F{white}"
 
 # Adding color
 alias ls='ls -hN --color=auto --group-directories-first'
+<<<<<<< HEAD
 alias git-lines='git ls-files | xargs wc -l'
 cdl() { cd $1 && ls }
+=======
+
+
+# ENV
+export VISUAL=vim
+export EDITOR=vim
+>>>>>>> e642f17d20378d07a018f8aefe591270e48bda3b
 
 
 # vi mode
@@ -75,5 +88,8 @@ zle-line-init() {
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+<<<<<<< HEAD
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+=======
+>>>>>>> e642f17d20378d07a018f8aefe591270e48bda3b
