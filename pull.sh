@@ -1,7 +1,6 @@
 #!/bin/bash
 cp ~/.vimrc vimrc
 cp ~/.zshrc .
-cp ~/.zshenv .
 cp ~/.imwheelrc .
 cp ~/.Xresources .
 cp ~/.config/alacritty/alacritty.yml .config/alacritty
