@@ -11,8 +11,6 @@ augroup END
 "autocmd FocusLost * wa
 "autocmd TabLeave * wa
 
-let g:ycm_filepath_completion_use_working_dir = 1
-
 set timeoutlen=1
 set tabstop=2
 set expandtab
@@ -37,12 +35,10 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '>-2<CR>gv=gv
 
 call plug#begin('~/.vim/plugged')
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ycm-core/YouCompleteMe'
-Plug 'preservim/nerdtree'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 
 lua require'plug-colorizer'
