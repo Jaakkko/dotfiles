@@ -36,6 +36,7 @@ vnoremap K :m '>-2<CR>gv=gv
 
 call plug#begin('~/.vim/plugged')
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
@@ -44,3 +45,14 @@ call plug#end()
 lua require'plug-colorizer'
 
 nnoremap <silent> <F1> :NERDTreeToggle<CR>
+
+function SetupGruvbox()
+  colorscheme gruvbox
+  hi Normal guibg=NONE ctermbg=NONE
+  hi CursorLineNr guibg=NONE
+endfunction
+
+autocmd vimenter * 
+  \ colorscheme gruvbox |
+  \ hi Normal guibg=NONE ctermbg=NONE |
+  \ hi CursorLineNr guibg=NONE
