@@ -1,2 +1,8 @@
 Xcursor.size: 4
 Xcursor.theme: capitaine-cursors
+
+Xft.antialias: 1
+Xft.hinting: 0
+Xft.hintstyle: hintnone
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
