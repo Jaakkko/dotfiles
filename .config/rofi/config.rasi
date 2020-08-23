@@ -10,8 +10,8 @@ configuration {
 	separator-style: "none";
 	hide-scrollbar: true;
   /*            bg          fg       bgalt      hlbg        hlfg*/
-  color-normal: "#00000000, #e4eef5, #00000000, #00000000,  #75c6ff";
-  color-urgent: "#00000000, #e4eef5, #00000000, #00000000,  #75c6ff";
-  color-active: "#00000000, #e4eef5, #00000000, #00000000,  #75c6ff";
+  color-normal: "#00000000, #bcc6cf, #00000000, #00000000,  #c7c99b";
+  color-urgent: "#00000000, #bcc6cf, #00000000, #00000000,  #c7c99b";
+  color-active: "#00000000, #bcc6cf, #00000000, #00000000,  #c7c99b";
 	modi: "run";
 }
