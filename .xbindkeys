@@ -11,3 +11,6 @@
 
 "playerctl -a previous"
   XF86AudioPrev
+
+"playerctl -a play-pause"
+  XF86AudioPause
