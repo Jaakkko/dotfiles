@@ -1,13 +1,15 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/jaakko/.zshrc'
 
-autoload -Uz compinit
+fpath=(~/.zsh/completion $fpath)
+
+autoload -Uz compinit && compinit -i
 zstyle ':completion:*' menu select
 compinit
 
@@ -77,3 +79,12 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/jaakko/Lataukset/google-cloud-sdk/path.zsh.inc' ]; then . '/home/jaakko/Lataukset/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/jaakko/Lataukset/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/jaakko/Lataukset/google-cloud-sdk/completion.zsh.inc'; fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
