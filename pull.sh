@@ -13,6 +13,7 @@ cp ~/.config/nvim/init.vim .config/nvim/init.vim
 # bspwm
 cp ~/.config/sxhkd/sxhkdrc .config/sxhkd/sxhkdrc
 cp ~/.config/bspwm/bspwmrc .config/bspwm/bspwmrc
+cp ~/.config/bspwm/panel.js .config/bspwm/panel.js
 
 # GTK
 cp -r ~/.config/gtk-3.0 .config
