@@ -16,7 +16,7 @@ super + F12
 
 # application launcher
 super + d
-  dmenu_run -fn  "Roboto:style=Regular:size=11:antialias=true" -nb '#000000' -sb '#C7C99B' -nf '#BFD4E1' -sf '#14213D' -i -b
+  dmenu_run -fn  "Roboto:style=Regular:size=12:antialias=true" -nb '#000000' -sb '#C7C99B' -nf '#BFD4E1' -sf '#14213D' -i -b
 
 # terminal emulator
 super + Return
