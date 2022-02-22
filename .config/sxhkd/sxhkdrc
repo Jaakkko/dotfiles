@@ -4,11 +4,15 @@
 
 # chromium
 super + F1
-  chromium
+  chromium --disable-features=MediaRouter --force-dark-mode
 
 # screenshot
 super + F2
   scrot -s "/tmp/%F_%T$wx$h.png" -e "xclip -selection clipboard -target image/png -i \$f"
+
+# signal
+super + F3
+  snap run signal-desktop
 
 # suspend
 super + F12
@@ -20,7 +24,7 @@ super + d
 
 # terminal emulator
 super + Return
-	alacritty
+	snap run alacritty
 
 # make sxhkd reload its configuration files:
 super + Escape

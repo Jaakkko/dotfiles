@@ -18,7 +18,7 @@ picom \
 	--frame-opacity=1.0 &
 
 # Scroll
-pgrep imwheel || imwheel -b 45
+pgrep imwheel || imwheel -b "4 5"
 
 # Notifications
 deadd-notification-center &
@@ -44,4 +44,4 @@ bspc config normal_border_color \#F0A111F
 bspc config active_border_color \#FF14213D
 bspc config focused_border_color \#FF14213D
 
-node ~/.config/bspwm/panel.js | lemonbar -b -f "Roboto:style=Regular:size=11:antialias=true" -B "#80000000" | sh -s
+snap run node ~/.config/bspwm/panel.js | lemonbar -b -f "Roboto:style=Regular:size=11:antialias=true" -B "#80000000" | sh -s
