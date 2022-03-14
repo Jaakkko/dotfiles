@@ -14,6 +14,10 @@ super + F2
 super + F3
   snap run signal-desktop
 
+# visual studio code
+super + F4
+  snap run code
+
 # suspend
 super + F12
   systemctl suspend
@@ -24,7 +28,7 @@ super + d
 
 # terminal emulator
 super + Return
-	snap run alacritty
+	alacritty
 
 # make sxhkd reload its configuration files:
 super + Escape
