@@ -1,0 +1,16 @@
+# Increase volume
+"amixer set Master '3%+'"
+	XF86AudioRaiseVolume
+
+# Decrease volume
+"amixer set Master '3%-'"
+	XF86AudioLowerVolume
+
+"playerctl -a next"
+  XF86AudioNext
+
+"playerctl -a previous"
+  XF86AudioPrev
+
+"playerctl -a play-pause"
+  XF86AudioPause
